@@ -1,0 +1,18 @@
+phpcs:
+  standard: vendor/drupal/coder/coder_sniffer/Drupal
+
+phpmd:
+  standard: phpmd.xml
+
+# Php file extensions to parse.
+phpqa:
+  extensions:
+    - php
+    - inc
+    - install
+    - module
+    - theme
+
+#phpcpd:
+#    minLines: 5
+#    minTokens: 70
