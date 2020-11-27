@@ -6,3 +6,4 @@ WORKDIR /app
 
 COPY metrics.sh /usr/local/bin/phpqa
 COPY . /app
+RUN composer install
