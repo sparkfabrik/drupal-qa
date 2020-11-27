@@ -3,12 +3,11 @@ name: Docker
 on:
   push:
     # Publish `master` as Docker `latest` image.
-    branches:
-      - refs/tags/*
+    tags:
+      - '*'
 
 env:
   IMAGE_NAME: drupal-qa
-  TAG: ${GITHUB_REF##*/}
 jobs:
   push:
     runs-on: ubuntu-latest
@@ -22,7 +21,7 @@ jobs:
 
       - name: Build images
         run: |
-          docker build . --tag $IMAGE_NAME:$TAG
+          docker build . --tag $IMAGE_NAME:${GITHUB_REF##*/}
 
       - name: Push images to GitHub Container Registry
         run: |
@@ -30,5 +29,5 @@ jobs:
           # Change all uppercase to lowercase.
           IMAGE_ID=$(echo $IMAGE_ID | tr '[A-Z]' '[a-z]')
           echo IMAGE_ID=$IMAGE_ID
-          docker tag $IMAGE_NAME:$TAG $IMAGE_ID:$TAG
-          docker push $IMAGE_ID:$TAG
+          docker tag $IMAGE_NAME:${GITHUB_REF##*/} $IMAGE_ID:${GITHUB_REF##*/}
+          docker push $IMAGE_ID:${GITHUB_REF##*/}
