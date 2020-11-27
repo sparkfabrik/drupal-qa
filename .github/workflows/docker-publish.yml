@@ -4,11 +4,11 @@ on:
   push:
     # Publish `master` as Docker `latest` image.
     branches:
-      - main
+      - refs/tags/*
 
 env:
   IMAGE_NAME: drupal-qa
-  TAG: 1.23.3
+  TAG: ${GITHUB_REF##*/}
 jobs:
   push:
     runs-on: ubuntu-latest
