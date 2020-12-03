@@ -11,7 +11,6 @@ This is the list of tools installed:
 - php-parallel-lint/php-parallel-lint
 - nette/neon
 - edgedesign/phpqa
-- phpstan/phpstan
 - mglaman/phpstan-drupal
 - phpstan/phpstan-deprecation-rules
 
@@ -21,7 +20,7 @@ There are also some configurations provided for phpqa, phpmd and phpstan tools.
 ### In your pipeline:
 Run this command in your Drupal root folder:
 
-    docker run --rm -it -v ${PWD}:/app/drupal -v ${PWD}/reports:/app/reports \
+    docker run --rm -v ${PWD}:/app/drupal -v ${PWD}/reports:/app/reports \
     sparkdrupal-qa:latest phpqa \
     --analyzedDirs "drupal/web/modules/custom,drupal/web/themes" \
     --tools "phpcpd:0,phpcs:0,phpmd:0,phpmetrics,phploc,pdepend,parallel-lint:0,security-checker:0,phpstan:0"

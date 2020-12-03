@@ -1,8 +1,6 @@
 parameters:
   bootstrapFiles:
     - %currentWorkingDirectory%/drupal/vendor/autoload.php
-  scanFiles:
-    - %currentWorkingDirectory%/drupal/web/core/tests/Drupal/Tests/PhpunitCompatibilityTrait.php
   customRulesetUsed: true
   reportUnmatchedIgnoredErrors: false
   ignoreErrors:
