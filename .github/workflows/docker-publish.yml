@@ -23,7 +23,7 @@ jobs:
           docker build . --tag $IMAGE_NAME:${GITHUB_REF##*/}
 
       - name: Push images to GitHub Container Registry
-        if: github.event_name == 'release' && github.event.action == 'created'
+        if: github.event_name == 'release'
         run: |
           IMAGE_ID=ghcr.io/${{ github.repository_owner }}/$IMAGE_NAME
           IMAGE_ID=$(echo $IMAGE_ID | tr '[A-Z]' '[a-z]')
