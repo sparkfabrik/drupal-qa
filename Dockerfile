@@ -6,7 +6,7 @@ RUN apk add --no-cache \
 WORKDIR /app
 COPY metrics.sh /usr/local/bin/phpqa
 
-COPY composer* .
+COPY composer* ./
 RUN composer install --ignore-platform-reqs -v --no-interaction --prefer-dist --no-progress
 
-COPY . . 
+COPY . ./
