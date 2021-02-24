@@ -4,8 +4,8 @@ on:
   push:
     branches: 
       - main
-    tags:
-      - '*'
+  release:
+    types: [published]
 
 env:
   IMAGE_NAME: drupal-qa
