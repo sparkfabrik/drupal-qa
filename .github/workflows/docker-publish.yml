@@ -2,7 +2,8 @@ name: Docker
 
 on:
   push:
-    # Publish `master` as Docker `latest` image.
+    branches: 
+      - main
     tags:
       - '*'
 
@@ -24,9 +25,9 @@ jobs:
           docker build . --tag $IMAGE_NAME:${GITHUB_REF##*/}
 
       - name: Push images to GitHub Container Registry
+        if: github.event_name == 'release' && github.event.action == 'created'
         run: |
           IMAGE_ID=ghcr.io/${{ github.repository_owner }}/$IMAGE_NAME
-          # Change all uppercase to lowercase.
           IMAGE_ID=$(echo $IMAGE_ID | tr '[A-Z]' '[a-z]')
           echo IMAGE_ID=$IMAGE_ID
           docker tag $IMAGE_NAME:${GITHUB_REF##*/} $IMAGE_ID:${GITHUB_REF##*/}
