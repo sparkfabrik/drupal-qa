@@ -6,6 +6,7 @@ RUN apk add --no-cache \
 WORKDIR /app
 COPY metrics.sh /usr/local/bin/phpqa
 
+RUN COMPOSER_MEMORY_LIMIT=-1 composer global require hirak/prestissimo
 COPY composer* ./
 RUN composer install --ignore-platform-reqs -v --no-interaction --prefer-dist --no-progress
 
