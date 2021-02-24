@@ -1,8 +1,7 @@
 FROM composer:1
 RUN apk add --no-cache \
     build-base libxslt-dev libxml2-dev libgcrypt-dev git unzip wget curl libpng-dev && \
-    docker-php-ext-install xml xsl gd && \
-    docker-php-ext-enable xml xsl gd
+    docker-php-ext-install xml xsl gd
 
 WORKDIR /app
 COPY metrics.sh /usr/local/bin/phpqa
