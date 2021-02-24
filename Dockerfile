@@ -1,4 +1,5 @@
-FROM composer:1
+# Stuck on composer 1.10.19 to use php 7.4.
+FROM composer:1.10.19
 RUN apk add --no-cache \
     build-base libxslt-dev libxml2-dev libgcrypt-dev git unzip wget curl libpng-dev && \
     docker-php-ext-install xml xsl gd
