@@ -1,18 +1,21 @@
 phpcs:
-  standard: vendor/drupal/coder/coder_sniffer/Drupal
+  standard: Drupal
 
 phpmd:
   standard: phpmd.xml
 
 # Php file extensions to parse.
 phpqa:
+  report: true
+  buildDir: /app/reports
   extensions:
     - php
     - inc
     - install
     - module
     - theme
+  ignoredFiles: '*\\.css,*\\.md,*\\.txt,*\\.info,*\\.yml,settings.php'
 
-#phpcpd:
-#    minLines: 5
-#    minTokens: 70
+phpcpd:
+    minLines: 5
+    minTokens: 70

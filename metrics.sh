@@ -1,5 +1,4 @@
 #!/bin/sh
-composer install --prefer-dist
 
 # Copy composer.lock file into another folder so security-checker can scan for issues.
 mkdir security-check
@@ -29,7 +28,4 @@ done
 if ! ${IGNORED_DIRS_AS_ARG}; then
   ARGS="${ARGS} --ignoredDirs ${DEFAULT_IGNORED_DIRS}";
 fi
-vendor/bin/phpqa --ignoredFiles "*\\\.css,*\\\.md,*\\\.txt,*\\\.info,*\\\.yml,settings.php" \
-  --report \
-  --buildDir "/app/reports" \
-  ${ARGS}
+vendor/bin/phpqa ${ARGS}
