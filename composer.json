@@ -7,7 +7,8 @@
         "mglaman/phpstan-drupal": "^0.12.9",
         "nette/neon": "^3.2",
         "phpstan/phpstan-deprecation-rules": "^0.12.6",
-        "drupal/coder": "^8.3"
+        "drupal/coder": "^8.3",
+        "sebastian/phpcpd": "5.0.2"
     },
     "scripts": {
         "post-install-cmd": [

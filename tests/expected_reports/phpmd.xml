@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pmd version="@package_version@" timestamp="2021-04-13T14:22:19+00:00">
+  <file name="/app/drupal/web/modules/test_module/test_module.module">
+    <violation beginline="10" endline="10" rule="UnusedFormalParameter" ruleset="Unused Code Rules" externalInfoUrl="https://phpmd.org/rules/unusedcode.html#unusedformalparameter" priority="3">
+      Avoid unused parameters such as '$existing'.
+    </violation>
+  </file>
+</pmd>

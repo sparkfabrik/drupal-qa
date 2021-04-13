@@ -1,1 +1,6 @@
-vendor
+/vendor
+/reports
+/tests/vendor
+/tests/web/**
+!/tests/web/modules
+!/tests/web/modules/**
