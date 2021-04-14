@@ -1,0 +1,34 @@
+<h1>security-checker</h1>
+<pre id="cli">[CRITICAL] 1 package has known vulnerabilities
+
+dompdf/dompdf (0.6.1)
+---------------------
+
+ * CVE-2014-5011: Information Disclosure
+   https://github.com/dompdf/dompdf/releases/tag/v0.6.2
+
+ * CVE-2014-5012: Denial Of Service Vector
+   https://github.com/dompdf/dompdf/releases/tag/v0.6.2
+
+ * CVE-2014-5013: Remote Code Execution (complement of CVE-2014-2383)
+   https://github.com/dompdf/dompdf/releases/tag/v0.6.2
+
+</pre> 
+ 
+<style> 
+    html, body { 
+        margin: 0; 
+        padding: 0; 
+    } 
+    pre { 
+        background: black; 
+        color: white; 
+        padding: 1em; 
+        margin: 0; 
+    } 
+</style> 
+<script src="https://edgedesigncz.github.io/phpqa/assets/ansi_up.js"></script> 
+<script type="text/javascript"> 
+var code = document.getElementById("cli"); 
+code.innerHTML = ansi_up.ansi_to_html(code.innerHTML); 
+</script>
