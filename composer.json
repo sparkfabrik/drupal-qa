@@ -8,7 +8,8 @@
         "nette/neon": "^3.2",
         "phpstan/phpstan-deprecation-rules": "^0.12.6",
         "drupal/coder": "^8.3",
-        "sebastian/phpcpd": "5.0.2"
+        "sebastian/phpcpd": "5.0.2",
+        "webflo/drupal-finder": "^1.2"
     },
     "scripts": {
         "post-install-cmd": [
