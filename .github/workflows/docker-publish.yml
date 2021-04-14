@@ -2,9 +2,9 @@ name: Docker
 
 on:
   push:
-    branches: 
+    branches:
       - main
-      
+
 env:
   IMAGE_NAME: drupal-qa
 
@@ -22,12 +22,9 @@ jobs:
           docker build . --tag $IMAGE_NAME:${GITHUB_REF##*/}
 
       - name: Push images to GitHub Container Registry
-        if: ${{ github.event_name == 'release' }}
         run: |
           IMAGE_ID=ghcr.io/${{ github.repository_owner }}/$IMAGE_NAME
           IMAGE_ID=$(echo $IMAGE_ID | tr '[A-Z]' '[a-z]')
           echo IMAGE_ID=$IMAGE_ID
-          docker tag $IMAGE_NAME:${GITHUB_REF##*/} $IMAGE_ID:${GITHUB_REF##*/}
           docker tag $IMAGE_NAME:${GITHUB_REF##*/} $IMAGE_ID:latest
-          docker push $IMAGE_ID:${GITHUB_REF##*/}
           docker push $IMAGE_ID:latest
