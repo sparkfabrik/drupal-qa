@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <checkstyle version="3.6.0">
-<file name="/app/drupal/web/modules/test_module/src/SomeClass.php">
- <error line="8" column="1" severity="error" message="Missing class doc comment" source="Drupal.Commenting.ClassComment.Missing"/>
-</file>
 <file name="/app/drupal/web/modules/test_module/test_module.module">
  <error line="3" column="1" severity="error" message="Missing short description in doc comment" source="Drupal.Commenting.DocComment.MissingShort"/>
  <error line="8" column="4" severity="warning" message="Format should be &quot;* Implements hook_foo().&quot;, &quot;* Implements hook_foo_BAR_ID_bar() for xyz_bar().&quot;,, &quot;* Implements hook_foo_BAR_ID_bar() for xyz-bar.html.twig.&quot;, &quot;* Implements hook_foo_BAR_ID_bar() for xyz-bar.tpl.php.&quot;, or &quot;* Implements hook_foo_BAR_ID_bar() for block templates.&quot;" source="Drupal.Commenting.HookComment.HookCommentFormat"/>
+</file>
+<file name="/app/drupal/web/modules/test_module/src/SomeClass.php">
+ <error line="8" column="1" severity="error" message="Missing class doc comment" source="Drupal.Commenting.ClassComment.Missing"/>
 </file>
 </checkstyle>
 
