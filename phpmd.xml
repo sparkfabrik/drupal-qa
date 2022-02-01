@@ -39,7 +39,14 @@
             <property name="minimum" value="25" />
         </properties>
     </rule>
-    <rule ref="rulesets/unusedcode.xml" />
+    <rule ref="rulesets/unusedcode.xml">
+        <exclude name="UnusedLocalVariable" />
+    </rule>
+    <rule ref="rulesets/unusedcode.xml/UnusedLocalVariable">
+        <properties>
+            <property name="allow-unused-foreach-variables" description="Allow unused variables in foreach language constructs." value="true" />
+        </properties>
+    </rule>
     <rule ref="rulesets/naming.xml">
         <exclude name="LongVariable" />
         <exclude name="ShortVariable" />
