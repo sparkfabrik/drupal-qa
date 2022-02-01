@@ -9,7 +9,7 @@
         "nette/neon": "^3.3",
         "phpstan/phpstan-deprecation-rules": "^1.0",
         "drupal/coder": "^8.3",
-        "sebastian/phpcpd": "^5.0",
+        "sebastian/phpcpd": "5.0.2",
         "webflo/drupal-finder": "^1.2"
     },
     "extra": {
