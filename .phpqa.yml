@@ -19,3 +19,7 @@ phpqa:
 phpcpd:
     minLines: 5
     minTokens: 70
+
+phpstan:
+  level: 5
+  standard: phpstan.neon

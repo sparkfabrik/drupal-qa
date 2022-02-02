@@ -1,15 +1,16 @@
 {
     "require": {
         "cweagans/composer-patches": "^1.6",
+        "drupal/coder": "^8.3",
         "edgedesign/phpqa": "^1.25",
         "enlightn/security-checker": "^1.9",
-        "php-parallel-lint/php-parallel-lint": "^1.3",
-        "phpstan/phpstan": "^1.4",
         "mglaman/phpstan-drupal": "^1.1",
         "nette/neon": "^3.3",
+        "php-parallel-lint/php-parallel-lint": "^1.3",
+        "phpstan/phpstan": "^1.4",
         "phpstan/phpstan-deprecation-rules": "^1.0",
-        "drupal/coder": "^8.3",
         "sebastian/phpcpd": "5.0.2",
+        "vimeo/psalm": "^4.13",
         "webflo/drupal-finder": "^1.2"
     },
     "extra": {

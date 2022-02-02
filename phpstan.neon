@@ -5,7 +5,6 @@ parameters:
   reportUnmatchedIgnoredErrors: false
   ignoreErrors:
     - '#\Drupal calls should be avoided in classes, use dependency injection instead#'
-    - '#Unsafe usage of new static\(\).#'
   drupal:
     drupal_root: %currentWorkingDirectory%/drupal/web
   parallel:
