@@ -1,11 +1,14 @@
 <h1>security-checker</h1>
-<pre id="cli">[CRITICAL] 2 packages have known vulnerabilities
+<pre id="cli">[CRITICAL] 3 packages have known vulnerabilities
+
+composer/composer (1.10.22)
+---------------------------
+
+ * CVE-2021-41116: Improper escaping of command arguments on Windows leading to command injection
+   https://github.com/composer/composer/security/advisories/GHSA-frqg-7g38-6gcf
 
 dompdf/dompdf (0.6.1)
 ---------------------
-
- * CVE-2014-5011: Information Disclosure
-   https://github.com/dompdf/dompdf/releases/tag/v0.6.2
 
  * CVE-2014-5012: Denial Of Service Vector
    https://github.com/dompdf/dompdf/releases/tag/v0.6.2
@@ -13,11 +16,20 @@ dompdf/dompdf (0.6.1)
  * CVE-2014-5013: Remote Code Execution (complement of CVE-2014-2383)
    https://github.com/dompdf/dompdf/releases/tag/v0.6.2
 
+ * CVE-2014-5011: Information Disclosure
+   https://github.com/dompdf/dompdf/releases/tag/v0.6.2
+
 drupal/core (8.9.13)
 --------------------
 
  * CVE-2020-13672: Drupal core - Critical - Cross-site scripting - SA-CORE-2021-002
    https://www.drupal.org/sa-core-2021-002
+
+ * Drupal core - Moderately critical - Third-party libraries - SA-CORE-2021-005
+   https://www.drupal.org/sa-core-2021-005
+
+ * CVE-2021-33829: Drupal core - Critical - Cross-site scripting - SA-CORE-2021-003
+   https://www.drupal.org/sa-core-2021-003
 
 </pre> 
  

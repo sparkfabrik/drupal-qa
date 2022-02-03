@@ -21,7 +21,8 @@ while [[ "$#" -gt 0 ]]; do
     ARGS="${ARGS} $1 $2"
     ;;
   esac
-  shift 2
+  shift
+  shift
 done
 
 # Set default ignored dirs to vendor directory.
