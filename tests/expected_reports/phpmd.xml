@@ -2,7 +2,7 @@
 <pmd version="@package_version@" tool="phpmd" timestamp="2022-02-02T08:42:44+00:00">
   <file name="/app/drupal/web/modules/test_module/test_module.module">
     <violation beginline="10" endline="10" rule="UnusedFormalParameter" ruleset="Unused Code Rules" externalInfoUrl="https://phpmd.org/rules/unusedcode.html#unusedformalparameter" priority="3">
-      Avoid unused parameters such as '$existing'.
+      Avoid unused parameters such as &#039;$existing&#039;.
     </violation>
   </file>
 </pmd>

@@ -1,4 +1,4 @@
-FROM composer:2.0.14
+FROM composer:2.3.5
 RUN apk add --no-cache \
     build-base libxslt-dev libxml2-dev libgcrypt-dev git unzip wget curl libpng-dev && \
     docker-php-ext-install xml xsl gd
