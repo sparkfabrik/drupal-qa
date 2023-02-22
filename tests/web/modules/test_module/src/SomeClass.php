@@ -5,6 +5,9 @@ namespace Drupal\some_module;
 use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
 
+/**
+ * This is a test class.
+ */
 class SomeClass extends FormBase {
 
   /**
