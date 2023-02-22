@@ -22,5 +22,5 @@ phpcpd:
     minTokens: 70
 
 phpstan:
-  level: 5
+  level: 6
   standard: phpstan.neon
