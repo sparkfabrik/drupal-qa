@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pmd-cpd>
   <duplication lines="118" tokens="118">
-    <file path="/app/drupal/web/modules/test_module/test_module.module" line="21"/>
-    <file path="/app/drupal/web/modules/test_module/test_module.module" line="142"/>
+    <file path="/app/drupal/web/modules/test_module/test_module.module" line="20"/>
+    <file path="/app/drupal/web/modules/test_module/test_module.module" line="141"/>
     <codefragment>  1,
   2,
   3,

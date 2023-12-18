@@ -2,17 +2,17 @@
     "require": {
         "cweagans/composer-patches": "^1.6",
         "drupal/coder": "^8.3",
-        "edgedesign/phpqa": "^1.26",
+        "edgedesign/phpqa": "dev-master#a3038f1e488fd11d660c47b2fd71cad2773e23b3",
         "enlightn/security-checker": "^1.9",
         "mglaman/phpstan-drupal": "^1.1",
         "nette/neon": "^3.3",
         "php-parallel-lint/php-parallel-lint": "^1.3",
         "phpstan/phpstan": "^1.4",
         "phpstan/phpstan-deprecation-rules": "^1.0",
-        "sebastian/phpcpd": "^5",
         "vimeo/psalm": "^4.13",
         "webflo/drupal-finder": "^1.2",
-        "jangregor/phpstan-prophecy": "^1.0"
+        "jangregor/phpstan-prophecy": "^1.0",
+        "sebastian/phpcpd": "^6"
     },
     "extra": {
         "patches": {

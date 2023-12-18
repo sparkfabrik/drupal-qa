@@ -14,8 +14,7 @@ function test_module_theme($existing) {
  * For phpcpd.
  *
  * We put these 2 arrays here in a .module file and not in .php file because
- * phpcd invoked by phpqa must be able to scan also module files and currently
- * there is a bug with phpcpd in version 6.x.
+ * phpcd invoked by phpqa must be able to scan also module files.
  */
 $arr1 = [
   1,
@@ -258,3 +257,5 @@ $arr2 = [
   117,
   118,
 ];
+
+const SOME_CONST = 'some value';

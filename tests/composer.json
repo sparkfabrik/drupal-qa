@@ -16,7 +16,7 @@
     ],
     "require": {
         "composer/installers": "^1.2",
-        "dompdf/dompdf": "0.6.1",
+        "dompdf/dompdf": "2.0.3",
         "drupal/core-composer-scaffold": "^8.8",
         "drupal/core-dev": "8.9.13",
         "drupal/core-project-message": "^8.8",
