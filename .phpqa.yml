@@ -1,10 +1,12 @@
 phpcs:
-  standard: Drupal
+  # Reference the correct custom ruleset which includes both Drupal and DrupalPractice.
+  standard: /app/.phpcs.xml
+  # Since now we also have DrupalPractice and its rules are many and all warnings, treat them as non fatal to ease projects' upgrade path.
+  ignoreWarnings: true
 
 phpmd:
   standard: phpmd.xml
 
-# Php file extensions to parse.
 phpqa:
   report: true
   verbose: true
@@ -24,3 +26,6 @@ phpcpd:
 phpstan:
   level: 5
   standard: phpstan.neon
+
+security-checker:
+    composerLock: drupal/composer.lock

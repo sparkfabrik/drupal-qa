@@ -10,8 +10,8 @@
   <config name="drupal_core_version" value="9"/>
 
   <!-- Coder rules. -->
-  <rule ref="../vendor/drupal/coder/coder_sniffer/Drupal"/>
-  <rule ref="../vendor/drupal/coder/coder_sniffer/DrupalPractice"/>
+  <rule ref="/app/vendor/drupal/coder/coder_sniffer/Drupal"/>
+  <rule ref="/app/vendor/drupal/coder/coder_sniffer/DrupalPractice"/>
 
   <!-- No need for @file comments. -->
   <rule ref="Drupal.Commenting.FileComment.Missing">
@@ -22,4 +22,10 @@
   <rule ref="DrupalPractice.General.ClassName.ClassPrefix">
     <severity>0</severity>
   </rule>
+
+  <!-- All constants defined by a module must be prefixed with the module's name. -->
+  <rule ref="Drupal.Semantics.ConstantName.ConstConstantStart">
+    <severity>0</severity>
+  </rule>
+
 </ruleset>
